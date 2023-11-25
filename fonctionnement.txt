@@ -1,0 +1,7 @@
+user inputs text
+clik on add buton => cree un entry
+    si ya pas d input, ne cree pas d'entry
+
+entry est composé du texte de l user et d un bouton delete entry
+si user clique sur l'entry => texte barré et icone check et bg gris
+si user clique sur bouton delete entry, l'entry est effacé
