@@ -9,7 +9,7 @@ function insertEntry() {
     if (inputText.value) {
         const entry = document.createElement("div");
         entry.classList.add("entry");
-        entry.addEventListener("click",changeLook)
+        entry.addEventListener("click",changeEntryState)
         const para = document.createElement("p");
         para.textContent = inputText.value;
         entry.appendChild(para);
@@ -30,7 +30,11 @@ function removeEntry(e) {
     e.target.parentElement.remove();
 }
 
-
-function changeLook(e) {
-    e.target.classList.add("stroked");
+function changeEntryState(e) {
+    if (e.target.classList.contains("stroked")) {
+        e.target.classList.remove("stroked");
+    } else {
+        e.target.classList.add("stroked");
+    }
 }
+

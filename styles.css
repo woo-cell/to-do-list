@@ -62,6 +62,7 @@ header h1 {
 .entry > button {
     background-color: #fb936d;
     color: #fff;
+    border: none;
 }
 
 .entry > button:hover {
